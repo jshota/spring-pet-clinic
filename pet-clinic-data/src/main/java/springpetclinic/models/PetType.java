@@ -1,4 +1,4 @@
-package com.github.jshota.springpetclinic.models;
+package springpetclinic.models;
 
 /**
  * @author j.h on 7/19/20

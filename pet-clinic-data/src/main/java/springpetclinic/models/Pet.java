@@ -1,4 +1,4 @@
-package com.github.jshota.springpetclinic.models;
+package springpetclinic.models;
 
 import java.time.LocalDate;
 
