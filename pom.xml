@@ -44,7 +44,8 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:jshota/spring-pet-clinic.git</developerConnection>
+        <url>https://github.com/jshota/spring-pet-clinic.git</url>
+        <developerConnection>scm:git:https://github.com/jshota/spring-pet-clinic.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
 
