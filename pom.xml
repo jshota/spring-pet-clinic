@@ -5,7 +5,7 @@
 
     <groupId>com.github.jshota</groupId>
     <artifactId>spring-pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -44,8 +44,7 @@
     </build>
 
     <scm>
-        <url>https://github.com/jshota/spring-pet-clinic.git</url>
-        <developerConnection>scm:git:https://github.com/jshota/spring-pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:jshota/spring-pet-clinic.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
 
