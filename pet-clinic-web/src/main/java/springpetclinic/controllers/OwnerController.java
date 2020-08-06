@@ -1,7 +1,9 @@
 package springpetclinic.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import springpetclinic.services.OwnerService;
 
 /**
  * @author j.h on 7/20/20
@@ -10,8 +12,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class OwnerController {
 
+    private final OwnerService ownerService;
+
+    public OwnerController(OwnerService ownerService) {
+        this.ownerService = ownerService;
+    }
+
     @RequestMapping({"", "/", "/index", "/index.html"}) // Watch out: needs an empty string here
-    public String listOwners() {
+    public String listOwners(Model model) {
+
+        model.addAttribute("owners", ownerService.findAll());
 
         return "owners/index";
     }
