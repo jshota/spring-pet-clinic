@@ -6,8 +6,6 @@ import springpetclinic.models.Owner;
 import springpetclinic.models.Vet;
 import springpetclinic.services.OwnerService;
 import springpetclinic.services.VetService;
-import springpetclinic.services.map.OwnerServiceMap;
-import springpetclinic.services.map.VetServiceMap;
 
 /**
  * @author j.h on 8/6/20
@@ -18,9 +16,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
